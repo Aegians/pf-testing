@@ -162,3 +162,14 @@ function xd(reset)
 		end)
 	end)
 end
+
+function check()
+	local heh
+	heh = game:GetService("RunService").Heartbeat:Connect(function(step)
+		if _G.sex == true then
+			heh:Disconnect()
+		end
+	end)
+end
+
+check()
